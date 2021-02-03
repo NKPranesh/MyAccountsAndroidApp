@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1E3D59</color>
+    <color name="colorPrimaryDark">#3B4D61</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="Background">#F5F0E1</color>
+    <color name="darkBlue">#1E3D59</color>
+    <color name="orange">#FF6E40</color>
+    <color name="paleOrange">#FFC13B</color>
+    <color name="backgorundforsearch">#02AEEE</color>
+    <color name="background2forsearch" />
+    <color name="secondary_text">#FFFFFF</color>
+    <color name="ourAppBackground">#0095FF</color>
+    <color name="colorTextPrimary">#212121</color>
+    <color name="colorTextSecondary">#757575</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorWhite">#FFFFFF</color>
+</resources>

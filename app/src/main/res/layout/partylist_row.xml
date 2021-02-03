@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewID"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/cardview_compat_inset_shadow"
+        android:layout_marginLeft="@dimen/cardview_compat_inset_shadow"
+        android:layout_marginTop="@dimen/cardview_compat_inset_shadow"
+        android:layout_marginEnd="@dimen/cardview_compat_inset_shadow"
+        android:layout_marginRight="@dimen/cardview_compat_inset_shadow"
+        android:layout_marginBottom="@dimen/cardview_compat_inset_shadow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/NameOfPartyID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="14dp"
+                android:paddingTop="10dp"
+                android:text="Name"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gstNoID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="14dp"
+                android:paddingTop="5dp"
+                android:text="GST No."
+                android:textSize="12sp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

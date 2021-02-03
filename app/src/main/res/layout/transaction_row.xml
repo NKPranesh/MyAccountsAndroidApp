@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="18dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardID"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/cardview_compat_inset_shadow"
+        android:layout_marginLeft="@dimen/cardview_compat_inset_shadow"
+        android:layout_marginTop="@dimen/cardview_compat_inset_shadow"
+        android:layout_marginEnd="@dimen/cardview_compat_inset_shadow"
+        android:layout_marginRight="@dimen/cardview_compat_inset_shadow"
+        android:layout_marginBottom="@dimen/cardview_compat_inset_shadow">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/transactionNoID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingLeft="14dp"
+                    android:paddingTop="10dp"
+                    android:text="Transaction Number"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/paymentsButtonID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="#00BCD4"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Pay"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/transactiondateID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/montserrat"
+                android:paddingLeft="14dp"
+                android:paddingTop="5dp"
+                android:text="Date"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

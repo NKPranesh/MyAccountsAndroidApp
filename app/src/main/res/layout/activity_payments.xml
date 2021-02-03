@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".payments">
+
+    <TextView
+        android:id="@+id/PartyDetailsID"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#1F92ED"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Party Details"
+        android:textColor="@color/darkBlue"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/partyNameID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Party Name"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/gstNOID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GST No."
+        android:textColor="#000000"
+        android:fontFamily="@font/montserrat"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/phoneID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textColor="#000000"
+        android:fontFamily="@font/montserrat"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/addressID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textColor="#000000"
+        android:fontFamily="@font/montserrat"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/transactionDetailsID"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#1F92ED"
+        android:gravity="center"
+        android:text="Transaction Details"
+        android:textColor="@color/darkBlue"
+        android:fontFamily="@font/montserrat"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/invoiceNumberID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Invoice No."
+        android:fontFamily="@font/montserrat"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/openingDateID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opening Date:"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/totalAmountID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Amount"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/amountPaidID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Amount Paid"
+        android:textColor="#000000"
+        android:fontFamily="@font/montserrat"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/balanceamountID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance amount"
+        android:fontFamily="@font/montserrat"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/payID"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#1F92ED"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat"
+        android:text="Pay"
+        android:textColor="@color/darkBlue"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/dateInputID"
+            android:layout_width="172dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="Date"
+            android:inputType="date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/enterAmountID"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/enterAmountID"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:fontFamily="@font/montserrat"
+            android:hint="Enter Amount"
+            android:inputType="number|numberDecimal"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/payButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#00BCD4"
+            android:fontFamily="@font/montserrat"
+            android:text="Pay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateInputID" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/paymentHistoryID"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="10sp"
+        android:background="#1F92ED"
+        android:gravity="center"
+        android:text="Payment History"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/darkBlue"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

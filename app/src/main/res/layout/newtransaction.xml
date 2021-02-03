@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/copy3">
+
+
+    <TextView
+        android:id="@+id/addTransTextViewID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="New Transaction"
+        android:textColor="@color/darkBlue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="612dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addTransTextViewID">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="13dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/invoiceID"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="359dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="#000000"
+                android:theme="@style/EditTextHint"
+                app:boxStrokeColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.307"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/invoice"
+                    android:layout_width="315dp"
+                    android:layout_height="46dp"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Invoice Number"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#070000"
+                    android:textColorLink="#000000"
+                    android:textCursorDrawable="@android:color/background_dark"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dateID"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="359dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="#000000"
+                android:theme="@style/EditTextHint"
+                app:boxStrokeColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.307"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/date"
+                    android:layout_width="315dp"
+                    android:layout_height="46dp"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Date (DD/MM/YYYY)"
+                    android:inputType="date"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#070000"
+                    android:textColorLink="#000000"
+                    android:textCursorDrawable="@android:color/background_dark"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/spinnerId"
+                style="@android:style/Widget.Material.Light.Spinner"
+                android:layout_width="315dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="5dp"
+                android:entries="@array/dealertype"
+                android:spinnerMode="dropdown"
+                tools:targetApi="lollipop" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/amountEditTextID"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="359dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="#000000"
+                android:theme="@style/EditTextHint"
+                app:boxStrokeColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.307"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/amountID"
+                    android:layout_width="315dp"
+                    android:layout_height="46dp"
+                    android:fontFamily="@font/montserrat"
+                    android:hint="Amount"
+                    android:inputType="number|numberDecimal"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#070000"
+                    android:textColorLink="#000000"
+                    android:textCursorDrawable="@android:color/background_dark"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/gstID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="9dp"
+                    android:layout_marginRight="9dp"
+                    android:fontFamily="@font/montserrat"
+                    android:paddingLeft="45dp"
+                    android:text="GST  (%) :"
+                    android:textColor="#070000"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toStartOf="@+id/gstValueId"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/gstValueId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginEnd="132dp"
+                    android:layout_marginRight="132dp"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/gstID"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/totalAmountID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:paddingTop="10dp"
+                android:text="Total Amount :"
+                android:textColor="#070000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/billuploadId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Upload Bill :"
+                android:textColor="#070000"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/uploadBillId"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/ic_menu_upload" />
+
+            <Button
+                android:id="@+id/addButtonId"
+                android:layout_width="112dp"
+                android:layout_height="61dp"
+                android:layout_marginLeft="130dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:fontFamily="@font/montserrat"
+                android:text="Add"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.468"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addressID"
+                app:layout_constraintVertical_bias="0.349" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
